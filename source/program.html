@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title> Cat Energy </title>
+  </head>
+  <body>
+    <header class="header">
+      <img class="header__logo" src="" width="" height=""  alt="logotype">
+      <h1 class="header__title">Cat Energy</h1>
+      <div class="header__humburger-menu"></div>
+    </header>
+    <section class="program">
+      <h1 class="program__title">Подбор программы</h1>
+      <p class="program__description"> Заполните анкету и мы подберём программу питания для вашего кота</p>
+
+       <label class="program__name">
+         Имя:*
+         <input type="text" placeholder="Барсик">
+       </label>
+
+       <label class="program__weight">
+        Вес (кг):*
+        <input type="text" placeholder="7">
+      </label>
+
+      <label class="program__age">
+        Возраст (лет):
+        <input type="text" placeholder="7">
+      </label>
+
+      <div class="program__types">
+
+        <label class="program__type">
+          Похудение
+          <input type="radio" name="type" value="Loosing weight" checked>
+        </label>
+
+        <label class="program__type">
+          Набор массы
+          <input type="radio" name="type" value="Weight gain">
+        </label>
+
+        <label class="program__type">
+          Не знаю (нужен ваш совет)
+          <input type="radio" name="type" value="Need your advice">
+        </label>
+
+      </div>
+
+      <div class="user-info">
+        <h2 class="user-info__title">Контактные данные (владельца кота)</h2>        
+        <label class="user-info__email">
+          E-mail:*
+          <input type="email" placeholder="kuklachev@gmail.com">
+        </label>
+        <label class="user-info__phone">
+          Телефон:*
+          <input type="phone" placeholder="8 (960) 900-60-90">
+        </label>
+      </div>
+
+      <div class="comment">
+        <h2 class="comment__title">Комментарий</h2>
+        <textarea class="comment__message">
+          Расскажите обо всех повадках кота
+        </textarea>
+      </div>
+
+      <div class="additional-info">
+        <label class="additional-info__item">
+          Сахарозаменитель
+          <input type="checkbox" name="additional" value="sweetener" checked>
+        </label>
+      
+        <label class="additional-info__item">
+          Питьевая вода
+          <input type="checkbox" name="additional" value="water">
+        </label>
+
+        <label class="additional-info__item">
+          Молоко
+          <input type="checkbox" name="additional" value="milk">
+        </label>
+
+        <label class="additional-info__item">
+          Витамины
+          <input type="checkbox" name="additional" value="vitamins">
+        </label>
+      </div>
+      <button class="program__button" type="submit">Отправить заявку</button>
+      <span class="program__footnote">*- Обязательные поля</span>
+    </section>
+    <section class="address">
+      <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
+      <p class="address__info">
+        ул. Большая <br> 
+        Конюшенная, д. 19/8 <br>
+        Санкт-Петербург
+      </p>
+      <div class="address__map">
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="footer__title">Cat Energy</div>
+      <ul class="footer__social">
+        <li class="footer__social-icon"></li>
+        <li class="footer__social-icon"></li>
+        <li class="footer__social-icon"></li>
+      </ul>
+      <div class="footer__creator">
+        <span>HTML Academy</span>
+        <img src="" alt="логотип академии">
+      </div>
+    </footer>
+  </body>
+</html>
