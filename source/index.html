@@ -3,50 +3,69 @@
   <head>
     <meta charset="utf-8">
     <title> Cat Energy </title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-      <img class="header__logo" src="" width="" height=""  alt="logotype">
-      <h1 class="header__title">Cat Energy</h1>
-      <div class="header__humburger-menu"></div>
+      <div class="header__menu">
+        <img class="header__logo" src="img/index/logo-mobile.png" width="33" height="38"  alt="Logotype">
+        <img class="header__title" src="img/index/logo-mobile-header.png" width="101" height="18"  alt="Cat Energy">
+        <img class="header__open-menu-btn visually-hidden" src="img/mobile-menu.png" width="24" height="18" alt=" mobile menu">
+        <img class="header__close-menu-btn " src="img/index/m-close.png" width="18" height="18" alt="close menu">
+      </div>
+      <nav class="header__nav">
+        <a class="header__nav-item" href="#">Главная</a>
+        <a class="header__nav-item" href="#">Каталог продукции</a>
+        <a class="header__nav-item" href="program.html">Подбор программы</a>
+      </nav>
     </header>
     <section class="preview">
       <h1 class="preview__title">Функциональное питание для котов</h1>
       <h2 class="preview__subtitle">Занялся собой? Займись котом!</h2>
-      <img class="preview__image" src="" width="" height=""  alt="cat energy food">
-      <a class="preview__link" href="#">Подобрать программу</a>
-    </section>
-    <section class="slim">
-      <h3 class="slim__title">Похудение</h3>
-      <p class="slim__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-      <a class="slim__link">Каталог Slim</a>
-    </section>
-    <section class="pro">
-      <h3 class="pro__title">Набор массы</h3>
-      <p class="pro__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-      <a class="pro__link">Каталог Pro</a>
+      <img class="preview__image" src="img/index/index-can-mobile.png" width="280" height="271"  alt="cat energy food">
+      <a class="preview__link button" href="#">Подобрать программу</a>
+
+      <div class="preview__program">
+        <h3 class="preview__program-name">Похудение</h3>
+        <p class="preview__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+        <a class="preview__catalog-link" href="#">Каталог Slim</a>
+      </div>
+
+      <div class="preview__program">
+        <h3 class="preview__program-name preview__program-name--pro">Набор массы</h3>
+        <p class="preview__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+        <a class="preview__catalog-link" href="#" >Каталог Pro</a>
+      </div>
     </section>
     <section class="features">
       <h2 class="features__title">Как это работает</h2>
 
       <div class="features__item">
-        <img class="features__image" src="" alt="Полезно">
+        <div class="features__image">
+          <img src="img/index/advantage-1.png" alt="Полезно">
+        </div>
         <p class="features__desc">Функциональное питание содержит только полезные питательные вещества.</p>
       </div>
 
       <div class="features__item">
-        <img class="features__image" src="" alt="Не нужно готовить">
+        <div class="features__image">
+          <img  src="img/index/andvantage-2.png" alt="Не нужно готовить">
+        </div>
         <p class="features__desc">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
       </div>
 
       <div class="features__item">
-        <img class="features__image" src="" alt="Заменяет обычную еду">
+        <div class="features__image">
+          <img src="img/index/advantage-3.png" alt="Заменяет обычную еду">
+        </div>
         <p class="features__desc">Замените один-два приема обычной еды на наше функциональное питание.</p>
       </div>
 
       <div class="features__item">
-        <img class="features__image" src="" alt="Быстрый результат">
+        <div class="features__image">
+          <img src="img/index/advantage-4.png" alt="Быстрый результат">
+        </div>
         <p class="features__desc">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
       </div>
 
@@ -58,42 +77,58 @@
         Отличный результат без изнуряющих тренировок! При этом он не изменил своих привычек
         и по прежнему спит по 16 часов в день.
       </p>
-      <div class="example__weight">
-        <b>5 кг</b>
-        <span>снижение веса</span>
+      <div class="example__achievment">
+        <div class="example__achievment-wrapper">
+          <b class="example__achievment-number">5 кг</b>
+          <span class="example__achievment-desc">снижение <br> веса</span>
+        </div>
+        <div class="example__achievment-wrapper">
+          <b class="example__achievment-number">60 дней</b>
+          <span class="example__achievment-desc">затрачено <br> времени</span>
+        </div>
+        <p class="example__expenses"> Затраты на питание: 15 000 руб</p>
       </div>
-      <div class="example__days">
-        <b>60 дней</b>
-        <span>затрачено времени</span>
-      </div>
-      <p class="example__expenses"> Затраты на питание: 15 000 руб</p>
-      <img class="example__cat-image">
+      <img class="example__cat-image" src="img/index/before-mobile.png" width="320" height="240" alt="cat after Cat Energy">
       <div class="example__slider slider">
-        <span class="slider__left-sign">Было</span>
-        <span class="slider__scale"></span>
-        <span class="slider__right-sign">Стало</span>
+        <span class="slider__side-text">Было</span>
+        <span class="slider__scale"><span class="slider__scale-filler"></span></span>
+        <span class="slider__side-text">Стало</span>
       </div>
     </section>
     <section class="address">
-      <h3 class="address__title">Приглашаем к сотрудничеству дилеров!</h3>
-      <p class="address__info">
-        ул. Большая <br>
-        Конюшенная, д. 19/8 <br>
-        Санкт-Петербург
-      </p>
-      <div class="address__map">
+      <div class="address__wrap">
+        <h3 class="address__title">
+          Приглашаем <br>
+          к сотрудничеству<br>
+          дилеров!
+        </h3>
+        <p class="address__info">
+          ул. Большая <br>
+          Конюшенная, д. 19/8 <br>
+          Санкт-Петербург
+        </p>
+      </div>
+      <div class="address__map-container">
+        <img class="address__map" src="img/index/map.jpg" width="320" height="365" alt="map">
+        <img class="address__map-pin" src="img/index/map-pin.png" width="62" height="53" alt="map pin">
       </div>
     </section>
     <footer class="footer">
-      <div class="footer__title">Cat Energy</div>
-      <ul class="footer__social">
-        <li class="footer__social-icon"></li>
-        <li class="footer__social-icon"></li>
-        <li class="footer__social-icon"></li>
+      <img class="footer__logo" src="img/index/logo-mobile-header.png" width="128" height="24" alt="Cat Energy">
+      <ul class="footer__social-list">
+        <li class="footer__social-item">
+          <img src="img/index/m-vk.png" width="22" height="12" alt="Vkontakte">
+        </li>
+        <li class="footer__social-item">
+          <img src="img/index/m-insta.png" width="16" height="16" alt="Instagram">
+        </li>
+        <li class="footer__social-item">
+          <img src="img/index/m-fb.png" width="10" height="19" alt="Facebook">
+        </li>
       </ul>
       <div class="footer__creator">
-        <span>HTML Academy</span>
-        <img src="" alt="логотип академии">
+        <span class="footer__creator-author"> HTML Academy </span>
+        <img class="footer__creator-logo" src="img/index/htmlacademy.png" width="27" height="34" alt="HTML Academy Logo">
       </div>
     </footer>
   </body>

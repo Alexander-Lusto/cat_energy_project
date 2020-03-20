@@ -1,0 +1,74 @@
+.example {
+  background-color: #f2f2f2;
+  padding: 30px 20px; }
+
+.example__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 60px; }
+
+.example__description {
+  margin-top: 20px;
+  margin-bottom: 25px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444; }
+
+.example__achievment {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.example__achievment-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 125px;
+  height: 60px;
+  margin-bottom: 35px;
+  border: 1px solid #cdcdcd; }
+
+.example__achievment-number {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
+  text-transform: uppercase; }
+
+.example__achievment-desc {
+  position: absolute;
+  top: 50px;
+  z-index: 10;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 12px;
+  color: #444444;
+  padding: 0 20px;
+  background-color: #f2f2f2; }
+
+.example__expenses {
+  flex-grow: 1;
+  margin: 0;
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: center; }
+
+.example__cat-image {
+  margin-left: -20px;
+  margin-bottom: 30px;
+  width: 320px;
+  height: 240px; }
+
+.example__slider {
+  text-align: center;
+  margin: 0 auto; }
