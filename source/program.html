@@ -25,25 +25,19 @@
       <p class="program__description"> Заполните анкету и мы подберём <br> программу питания для вашего кота</p>
 
       <form class="program__form">
-        <div class="program__cat-info">
-          <label class="program__form-item">
-            Имя:*
-            <input class="program__input" type="text" placeholder="Барсик">
-          </label>
-
-          <label class="program__form-item">
-           Вес (кг):*
-           <input class="program__input" type="text" placeholder="7">
-         </label>
-
-         <label class="program__form-item">
-           Возраст (лет):
-           <input class="program__input" type="text" placeholder="7">
-         </label>
-        </div>
-
+        <label class="program__form-item">
+          Имя:*
+          <input class="program__input" type="text" placeholder="Барсик">
+        </label>
+        <label class="program__form-item">
+         Вес (кг):*
+         <input class="program__input" type="text" placeholder="7">
+        </label>
+        <label class="program__form-item">
+          Возраст (лет):
+          <input class="program__input" type="text" placeholder="7">
+        </label>
         <div class="program__types">
-
           <label class="program__type">
             Похудение
             <input class="visually-hidden" type="radio" name="type" value="Loosing weight" checked>
@@ -64,46 +58,56 @@
 
         </div>
         <h2 class="program__form-title program__form-title--long">Контактные данные <br> (владельца кота)</h2>
-        <div class="program__user-info">
-          <label class="program__form-item program__email">
-            E-mail:*
-            <input class="program__input" type="email" placeholder="kuklachev@gmail.com">
-          </label>
-          <label class="program__form-item program__phone">
-            Телефон:*
-            <input class="program__input" type="phone" placeholder="8 (960) 900-60-90">
-          </label>
-        </div>
+
+        <label class="program__form-item">
+          E-mail:*
+          <input class="program__input program__input--email" type="email" placeholder="kuklachev@gmail.com">
+        </label>
+
+        <label class="program__form-item">
+          Телефон:*
+          <input class="program__input program__input--phone" type="phone" placeholder="8 (960) 900-60-90">
+        </label>
+
         <h2 class="program__form-title">Комментарий</h2>
         <div class="program__comment">
-          <textarea class="program__message ">Расскажите обо всех повадках кота</textarea>
+          <textarea class="program__message " placeholder="Расскажите обо всех повадках кота"></textarea>
         </div>
+
+        <h2 class="program__form-title">Дополнительно</h2>
         <div class="program__additional-info">
-          <h2 class="program__form-title">Дополнительно</h2>
-          <label class="program__form-item">
+          <label class="program__product-item">
             Сахарозаменитель
-            <input type="checkbox" name="additional" value="sweetener" checked>
+            <input class="visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
+            <span class="program__checkbox"></span>
           </label>
 
-          <label class="additional-info__item">
+          <label class="program__product-item">
             Питьевая вода
-            <input type="checkbox" name="additional" value="water">
+            <input class="visually-hidden" type="checkbox" name="additional" value="water">
+            <span class="program__checkbox"></span>
           </label>
 
-          <label class="additional-info__item">
+          <label class="program__product-item">
             Молоко
-            <input type="checkbox" name="additional" value="milk">
+            <input class="visually-hidden" type="checkbox" name="additional" value="milk">
+            <span class="program__checkbox"></span>
           </label>
 
-          <label class="additional-info__item">
+          <label class="program__product-item">
             Витамины
-            <input type="checkbox" name="additional" value="vitamins">
+            <input class="visually-hidden" type="checkbox" name="additional" value="vitamins">
+            <span class="program__checkbox"></span>
           </label>
         </div>
-        <button class="program__button" type="submit">Отправить заявку</button>
-        <span class="program__footnote">*- Обязательные поля</span>
+        <button class="program__button button" type="submit">Отправить заявку</button>
+        <p class="program__footnote">*- Обязательные поля</p>
       </form>
     </section>
+
+
+
+
     <section class="address address--grey">
       <div class="address__wrap">
         <h3 class="address__title">
@@ -119,7 +123,7 @@
       </div>
       <div class="address__map-container">
         <img class="address__map" src="img/index/map.jpg" width="320" height="365" alt="map">
-        <img class="address__map-pin" src="img/index/map-pin.png" width="62" height="53" alt="map pin">
+        <img class="address__map-pin" src="img/index/map-pin.png" width="55" height="53" alt="map pin">
       </div>
     </section>
     <footer class="footer">

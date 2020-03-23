@@ -21,14 +21,15 @@ body {
   padding: 0 20px;
   display: flex;
   justify-content: space-between;
-  align-items: center; }
+  align-items: center;
+  border-bottom: 1px solid #e6e6e6; }
 
 .header__nav-item {
   display: block;
   height: 65px;
   text-align: center;
   line-height: 65px;
-  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
   text-decoration: none;
   color: #111111; }
 

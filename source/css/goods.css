@@ -1,0 +1,31 @@
+.goods {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+  height: 130px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-top: 1px solid #ededed;
+  border-bottom: 1px solid #ededed; }
+
+.goods__name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase; }
+
+.goods__info {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 400;
+  color: #444444;
+  border-collapse: collapse; }
+
+.goods__property {
+  text-align: left; }
+
+.goods__value {
+  text-align: right; }
