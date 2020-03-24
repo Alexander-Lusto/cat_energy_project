@@ -1,0 +1,95 @@
+.preview {
+  padding: 25px 20px;
+  background-image: url(../img/index/index-background-mobile.png);
+  background-repeat: no-repeat;
+  background-color: #ffffff; }
+
+.preview__title {
+  margin: 0;
+  margin-bottom: 20px;
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 36px; }
+
+.preview__subtitle {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 14px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 14px; }
+
+.preview__image {
+  width: 280px;
+  height: 271px; }
+
+.preview__program {
+  position: relative;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f2f2f2; }
+
+.preview__program-name {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #000000; }
+  .preview__program-name::before {
+    content: "";
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #68b738;
+    margin-right: 20px; }
+  .preview__program-name::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    left: 10px;
+    top: -3px;
+    width: 50px;
+    height: 50px;
+    background-image: url(../img/index/slim-cat.png);
+    background-repeat: no-repeat; }
+
+.preview__program-name--pro::after {
+  left: 10px;
+  top: 10px;
+  left: -8px;
+  width: 80px;
+  height: 50px;
+  background-image: url(../img/index/pro-cat.png);
+  background-repeat: no-repeat; }
+
+.preview__description {
+  margin-top: 20px;
+  padding-bottom: 25px;
+  font-family: 'Arial', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  color: #444444;
+  border-bottom: 1px solid #d9d9d9; }
+
+.preview__catalog-link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000000; }
+  .preview__catalog-link::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 11px;
+    margin-left: 15px;
+    background-image: url(../img/index/right-arrow-long.png);
+    background-repeat: no-repeat; }

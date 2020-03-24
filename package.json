@@ -1,0 +1,25 @@
+{
+  "name": "cat_energy_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Alexander-Lusto/cat_energy_project.git"
+  },
+  "author": "Alexander Lusto",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Alexander-Lusto/cat_energy_project/issues"
+  },
+  "homepage": "https://github.com/Alexander-Lusto/cat_energy_project#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2",
+    "stylelint-config-htmlacademy": "^0.1.4"
+  }
+}
