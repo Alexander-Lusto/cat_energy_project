@@ -50,7 +50,8 @@
   font-weight: 400;
   line-height: 12px;
   color: #444444;
-  padding: 0 20px;
+  width: 60px;
+  padding: 0 15px;
   background-color: #f2f2f2; }
 
 .example__expenses {
@@ -72,3 +73,6 @@
 .example__slider {
   text-align: center;
   margin: 0 auto; }
+
+.example__cat-image-tablet {
+  display: none; }

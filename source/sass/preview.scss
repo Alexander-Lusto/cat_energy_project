@@ -22,6 +22,7 @@
   color: #ffffff;
   font-weight: 400;
   line-height: 14px;
+  text-transform: uppercase;
 }
 
 .preview__image {
@@ -97,6 +98,8 @@
 }
 
 .preview__catalog-link {
+  display: flex;
+  align-items: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 16px;
@@ -115,3 +118,4 @@
   }
 
 }
+
