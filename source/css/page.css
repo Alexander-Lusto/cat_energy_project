@@ -1,2 +1,15 @@
 .page {
-  width: 320px; }
+  width: 320px;
+  margin: 0 auto; }
+
+@media (min-width: 768px) {
+  .page {
+    width: 768px; } }
+
+@media (min-width: 1440px) {
+  .page {
+    width: 1440px;
+    background-color: #ffffff;
+    background-image: url(../img/index/index-background-desktop.jpg);
+    background-position: top 0 right 0;
+    background-repeat: no-repeat; } }

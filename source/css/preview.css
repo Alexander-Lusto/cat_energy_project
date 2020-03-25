@@ -28,7 +28,6 @@
 .preview__program {
   position: relative;
   padding: 20px;
-  margin: 20px 0;
   background-color: #f2f2f2; }
 
 .preview__program-name {
@@ -96,3 +95,144 @@
     margin-left: 15px;
     background-image: url(../img/index/right-arrow-long.png);
     background-repeat: no-repeat; }
+
+@media (min-width: 768px) {
+  .preview {
+    padding: 25px 30px 50px 30px;
+    background-color: #ffffff;
+    background-image: none; }
+  .preview__title {
+    color: #000000;
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 45px; }
+  .preview__subtitle {
+    margin-bottom: 40px;
+    font-size: 20px;
+    line-height: 20px;
+    color: #000000;
+    margin-bottom: 45px; }
+  .preview__image {
+    display: none; }
+  .preview__promo {
+    padding-left: 120px;
+    padding-right: 150px;
+    min-height: 840px;
+    background-image: url(../img/index/index-can-tablet.png);
+    background-repeat: no-repeat;
+    background-position: center bottom 25px; }
+  .preview__link {
+    width: 245px;
+    height: 52px;
+    font-size: 20px;
+    line-height: 50px;
+    font-weight: 400; }
+  .preview__program {
+    box-sizing: border-box;
+    width: 708px;
+    height: 372px;
+    padding-right: 62px;
+    padding-left: 52px;
+    padding-top: 70px;
+    padding-bottom: 50px; }
+    .preview__program:nth-child(2) {
+      margin-bottom: 30px; }
+  .preview__description {
+    width: 375px;
+    font-size: 16px;
+    line-height: 24px;
+    border: none; }
+  .preview__description--pro {
+    width: 340px; }
+  .preview__catalog-link {
+    font-size: 20px;
+    line-height: 20px;
+    width: 245px;
+    height: 52px; }
+  .preview__program-name {
+    font-size: 36px;
+    line-height: 37.02px; }
+    .preview__program-name::before {
+      display: none; }
+    .preview__program-name::after {
+      display: none; }
+  .preview__program {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .preview__program::after {
+      content: "";
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background-color: #68b738; }
+    .preview__program::before {
+      content: "";
+      display: inline-block;
+      position: absolute;
+      right: 85px;
+      top: 85px;
+      width: 140px;
+      height: 194px;
+      background-image: url(../img/index/cat-slim-tablet.png);
+      background-repeat: no-repeat; }
+  .preview__program--pro::before {
+    top: 145px;
+    right: 30px;
+    width: 268px;
+    height: 112px;
+    background-image: url(../img/index/cat-pro-tablet.png);
+    background-repeat: no-repeat; } }
+
+@media (min-width: 1440px) {
+  .preview {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 110px;
+    padding-bottom: 90px;
+    background-color: transparent;
+    background-image: url(../img/index/index-can.png);
+    background-position: top 0 left 550px; }
+  .preview__promo {
+    width: 100%;
+    background-image: none;
+    min-height: 520px;
+    margin-bottom: 90px; }
+  .preview__title {
+    width: 450px; }
+  .preview__program {
+    width: 570px;
+    height: 372px;
+    margin: 0; }
+  .preview__program {
+    font-size: 36px;
+    line-height: 37.02px; }
+    .preview__program::before {
+      display: none; }
+    .preview__program::after {
+      display: none; }
+  .preview__program-name {
+    font-size: 36px;
+    line-height: 37.02px; }
+    .preview__program-name::before {
+      display: inline-block;
+      width: 100px;
+      height: 100px;
+      margin-right: 60px; }
+    .preview__program-name::after {
+      display: inline-block;
+      left: 17px;
+      width: 70px;
+      height: 97px;
+      background-image: url(../img/index/cat-slim-desktop.png); }
+  .preview__program-name--pro::after {
+    display: inline-block;
+    top: 25px;
+    left: -17px;
+    width: 134px;
+    height: 56px;
+    background-image: url(../img/index/cat-pro-desktop.png); }
+  .preview__description {
+    width: 466px; } }

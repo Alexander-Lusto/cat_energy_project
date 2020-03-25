@@ -38,3 +38,62 @@
   position: absolute;
   top: 156px;
   left: 133px; }
+
+.address__map-tablet {
+  display: none; }
+
+@media (min-width: 768px) {
+  .address__wrap {
+    min-height: 205px;
+    padding: 0 70px; }
+  .address__title {
+    font-size: 20px;
+    line-height: 25px; }
+  .address__info {
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right; }
+  .address__city {
+    display: inline-block;
+    margin-top: 20px; }
+  .address__map {
+    display: none; }
+  .address__map-container {
+    height: 400px; }
+  .address__map-tablet {
+    width: 768px;
+    height: 400px; }
+  .address__map-pin {
+    position: absolute;
+    top: 195px;
+    left: 370px; }
+  .address__map-tablet {
+    display: block; } }
+
+@media (min-width: 1440px) {
+  .address {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 400px;
+    padding: 0 110px;
+    background-image: url(../img/index/map-desktop.png);
+    background-repeat: no-repeat; }
+  .address__wrap {
+    box-sizing: border-box;
+    width: 570px;
+    height: 200px;
+    background-color: #ffffff; }
+  .address__map-container {
+    background-image: none; }
+  .address__map-tablet {
+    display: none; }
+  .address__info {
+    text-align: left; }
+  .address__map {
+    display: none; }
+  .address__map-pin {
+    top: 155px;
+    left: 335px;
+    width: 113px;
+    height: 106px; } }
