@@ -1,13 +1,22 @@
+.visually-hidden {
+  display: none; }
+
 .page {
+  background-color: yellow;
+  margin: 0;
+  font-family: 'Oswald', sans-serif; }
+
+.page__wrapper {
   width: 320px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  background-color: #ffffff; }
 
 @media (min-width: 768px) {
-  .page {
+  .page__wrapper {
     width: 768px; } }
 
 @media (min-width: 1440px) {
-  .page {
+  .page__wrapper {
     width: 1440px;
     background-color: #ffffff;
     background-image: url(../img/index/index-background-desktop.jpg);
