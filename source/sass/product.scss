@@ -37,10 +37,10 @@
   text-align: right;
 }
 
-.product--more,
-{
+.product--more{
   text-align: center;
 }
+
 .product--more::before {
   content: "";
   display: block;
