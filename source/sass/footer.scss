@@ -9,6 +9,14 @@
   margin-bottom: 20px;
 }
 
+.footer__logo:hover {
+  opacity: 0.8;
+}
+
+.footer__logo:active {
+  opacity: 0.6;
+}
+
 .footer__social-list {
   display: flex;
   align-items: center;
@@ -42,6 +50,9 @@
   color: #444444;
 }
 
+.footer__social-item{
+  cursor: pointer;
+}
 
 @media (min-width: 768px) {
 

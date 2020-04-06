@@ -31,15 +31,15 @@
     background-color: #f2f2f2;
   }
 
+  .product__name br{
+    display: none;
+  }
+
   .product__button {
     flex-grow: 0;
   }
 
-  .product__photo {
-    display: none;
-  }
-
-  .product__photo-tablet {
+  .product__photo{
     margin-top: -90px;
     margin-bottom: 40px;
   }
@@ -75,7 +75,7 @@
     border-bottom: 1px solid #cdcdcd;
   }
 
-  .product__photo-tablet {
+  .product__photo{
     width: 195px;
     height: 208px;
   }

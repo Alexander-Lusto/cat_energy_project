@@ -20,11 +20,11 @@
     margin-bottom: 140px;
     text-align: center;
     background-color: #f2f2f2; }
+  .product__name br {
+    display: none; }
   .product__button {
     flex-grow: 0; }
   .product__photo {
-    display: none; }
-  .product__photo-tablet {
     margin-top: -90px;
     margin-bottom: 40px; }
   .product__name {
@@ -47,7 +47,7 @@
   .product__info tr {
     height: 35px;
     border-bottom: 1px solid #cdcdcd; }
-  .product__photo-tablet {
+  .product__photo {
     width: 195px;
     height: 208px; }
   .product__photo--small {

@@ -48,6 +48,12 @@
     font-weight: 400;
     line-height: 18px; }
 
+.program__input:hover {
+  border: 1px solid #cdcdcd; }
+
+.program__input:active {
+  border: 2px solid #444444; }
+
 .program__types {
   display: flex;
   flex-direction: column;
@@ -85,6 +91,12 @@
   margin-right: 15px;
   border-radius: 50%;
   border: 1px solid #cecece; }
+
+.program__type:hover .program__radio {
+  border: 1px solid #bcbcbc; }
+
+.program__type:active {
+  opacity: 0.3; }
 
 .program__type input[type="radio"]:checked + .program__radio::after {
   content: "";
@@ -166,6 +178,12 @@
   background-image: url(../img/form/tick.png);
   background-repeat: no-repeat;
   background-position: center; }
+
+.program__product-item:hover .program__checkbox {
+  border: 1px solid #bababa; }
+
+.program__product-item:active {
+  opacity: 0.3; }
 
 .program__footnote {
   margin-top: 25px;

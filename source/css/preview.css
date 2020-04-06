@@ -4,6 +4,9 @@
   background-repeat: no-repeat;
   background-color: #ffffff; }
 
+.preview__promo {
+  margin-bottom: 20px; }
+
 .preview__title {
   margin: 0;
   margin-bottom: 20px;
@@ -28,6 +31,7 @@
 .preview__program {
   position: relative;
   padding: 20px;
+  margin-bottom: 20px;
   background-color: #f2f2f2; }
 
 .preview__program-name {
@@ -86,7 +90,7 @@
   line-height: 16px;
   text-decoration: none;
   text-transform: uppercase;
-  color: #000000; }
+  color: #111111; }
   .preview__catalog-link::after {
     content: "";
     display: inline-block;
@@ -94,6 +98,20 @@
     height: 11px;
     margin-left: 15px;
     background-image: url(../img/index/right-arrow-long.png);
+    background-repeat: no-repeat; }
+
+.preview__catalog-link:hover::after {
+  width: 33px;
+  height: 11px;
+  background-image: url(../img/index/right-arrow-verylong.png);
+  background-repeat: no-repeat; }
+
+.preview__catalog-link:active {
+  opacity: 0.3; }
+  .preview__catalog-link:active::after {
+    width: 33px;
+    height: 11px;
+    background-image: url(../img/index/right-arrow-verylong.png);
     background-repeat: no-repeat; }
 
 @media (min-width: 768px) {
@@ -117,6 +135,7 @@
   .preview__promo {
     padding-left: 120px;
     padding-right: 150px;
+    margin: 0;
     min-height: 840px;
     background-image: url(../img/index/index-can-tablet.png);
     background-repeat: no-repeat;
@@ -134,9 +153,12 @@
     padding-right: 62px;
     padding-left: 52px;
     padding-top: 70px;
-    padding-bottom: 50px; }
+    padding-bottom: 50px;
+    margin: 0; }
     .preview__program:nth-child(2) {
       margin-bottom: 30px; }
+  .preview__program:not(:last-child) {
+    margin-bottom: 30px; }
   .preview__description {
     width: 375px;
     font-size: 16px;
@@ -205,7 +227,7 @@
   .preview__program {
     width: 570px;
     height: 372px;
-    margin: 0; }
+    margin-bottom: 30px; }
   .preview__program {
     font-size: 36px;
     line-height: 37.02px; }

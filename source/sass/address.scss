@@ -78,26 +78,20 @@
   }
 
   .address__map {
-    display: none;
+    width: 100%;
+    height: auto;
   }
 
   .address__map-container {
-    height: 400px;
-  }
-
-  .address__map-tablet {
-    width: 768px;
-    height: 400px;
+    min-height: 400px;
   }
 
   .address__map-pin {
+    width: 124px;
+    height: 106px;
     position: absolute;
-    top: 195px;
-    left: 370px;
-  }
-
-  .address__map-tablet {
-    display: block;
+    top: 150px;
+    left: 340px;
   }
 }
 
