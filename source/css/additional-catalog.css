@@ -20,7 +20,13 @@
   margin: 0 20px; }
 
 .additional-catalog__bonus {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-sizing: border-box;
   padding: 40px 20px;
+  margin: 35px auto;
   width: 280px;
   height: 290px;
   background-image: url(../img/catalog/gift-photo-mobile.jpg);
@@ -35,8 +41,8 @@
   font-size: 16px;
   line-height: 20px;
   font-family: Arial, Helvetica, sans-serif;
-  font-weight: 400; }
-  .additional-catalog__bonus-text::before {
+  font-weight: 400;
+  /* &::before {
     content: "";
     display: block;
     margin: 65px auto;
@@ -44,4 +50,5 @@
     height: 60px;
     background-image: url(../img/catalog/gift.png);
     background-position: center;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+  } */ }

@@ -1,6 +1,5 @@
 .program {
-  padding: 30px 20px;
-  background-color: #ffffff; }
+  padding: 30px 20px; }
 
 .program__title {
   margin: 0;
@@ -49,12 +48,18 @@
     font-weight: 400;
     line-height: 18px; }
 
+.program__input:hover {
+  border: 1px solid #cdcdcd; }
+
+.program__input:active {
+  border: 2px solid #444444; }
+
 .program__types {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   box-sizing: border-box;
-  height: 160px;
+  min-height: 160px;
   width: 320px;
   margin-left: -20px;
   padding: 20px;
@@ -72,6 +77,9 @@
   font-weight: 400;
   cursor: pointer; }
 
+.program__type:not(:last-child) {
+  margin-bottom: 13px; }
+
 .program__radio {
   display: inline-flex;
   justify-content: center;
@@ -84,6 +92,12 @@
   border-radius: 50%;
   border: 1px solid #cecece; }
 
+.program__type:hover .program__radio {
+  border: 1px solid #bcbcbc; }
+
+.program__type:active {
+  opacity: 0.3; }
+
 .program__type input[type="radio"]:checked + .program__radio::after {
   content: "";
   display: inline-block;
@@ -94,7 +108,6 @@
 
 .program__form-title {
   display: flex;
-  align-items: center;
   margin: 30px 0;
   width: 300px;
   font-size: 24px;
@@ -103,18 +116,20 @@
   .program__form-title::after {
     content: "";
     flex-grow: 1;
+    flex-basis: 50px;
     margin-left: 20px;
+    margin-top: 13px;
     height: 3px;
     background-color: #68b738; }
 
 .program__form-title--long::after {
-  margin-bottom: 20px; }
+  margin-bottom: 25px; }
 
 .program__message {
   box-sizing: border-box;
   padding: 15px 10px;
   max-width: 280px;
-  width: 280px;
+  min-width: 280px;
   height: 150px;
   border: 1px solid #ededed;
   font-family: 'Oswald', sans-serif;
@@ -130,7 +145,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 160px;
+  min-height: 160px;
   margin: 35px 0; }
 
 .program__product-item {
@@ -164,6 +179,12 @@
   background-repeat: no-repeat;
   background-position: center; }
 
+.program__product-item:hover .program__checkbox {
+  border: 1px solid #bababa; }
+
+.program__product-item:active {
+  opacity: 0.3; }
+
 .program__footnote {
   margin-top: 25px;
   margin-bottom: 0;
@@ -183,3 +204,136 @@
   background-image: url(../img/form/mail.png);
   background-repeat: no-repeat;
   background-position: center right 15px; }
+
+@media (min-width: 768px) {
+  .program {
+    padding: 30px 30px 70px 30px; }
+  .program__title {
+    margin-bottom: 60px;
+    font-size: 60px;
+    line-height: 60px; }
+  .program__form {
+    padding: 0 35px; }
+  .program__description {
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 65px; }
+  .program__form-item {
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 20px; }
+  .program__input {
+    margin-left: 15px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 20px; }
+    .program__input::placeholder {
+      font-size: 20px;
+      line-height: 20px; }
+  .program__types {
+    box-sizing: border-box;
+    margin: 75px 0;
+    padding: 25px;
+    min-height: 196px;
+    width: 100%;
+    border: 1px solid #e6e6e6; }
+  .program__type {
+    font-size: 20px;
+    line-height: 20px; }
+  .program__radio {
+    width: 40px;
+    height: 40px; }
+  .program__type input[type="radio"]:checked + .program__radio::after {
+    width: 18px;
+    height: 18px; }
+  .program__form-title--long::after {
+    margin-bottom: 0; }
+  .program__form-title {
+    margin-left: -65px;
+    margin-bottom: 70px;
+    width: 768px;
+    font-size: 36px;
+    line-height: 36px; }
+    .program__form-title::after {
+      content: "";
+      flex-grow: 1;
+      flex-basis: 30px;
+      min-width: 30px;
+      margin-left: 40px;
+      margin-top: 20px;
+      height: 3px;
+      background-color: #68b738; }
+    .program__form-title::before {
+      content: "";
+      flex-basis: 30px;
+      min-width: 30px;
+      margin-right: 40px;
+      margin-top: 20px;
+      height: 3px;
+      background-color: #68b738; }
+  .program__form-title br {
+    display: none; }
+  .program__message {
+    width: 100%;
+    max-width: 100%;
+    font-size: 20px;
+    line-height: 30px; }
+  .program__additional-info {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 120px; }
+  .program__checkbox {
+    width: 40px;
+    height: 40px; }
+  .program__product-item {
+    width: 280px;
+    font-size: 20px;
+    line-height: 20px; }
+  .program__button {
+    width: 285px;
+    padding: 0; }
+  .program__footnote {
+    display: inline;
+    margin-left: 60px; } }
+
+@media (min-width: 1440px) {
+  .page__wrapper--white {
+    background-image: none; }
+  .header__nav-item--black {
+    color: #000000; }
+  .program {
+    padding: 30px 110px 70px 110px; }
+  .program__form {
+    padding: 0; }
+  .program__cat-info {
+    width: 570px; }
+  .program__types {
+    width: 570px;
+    margin: 0; }
+  .program__form-item {
+    width: 570px; }
+  .program__flex-wrapper {
+    display: flex;
+    justify-content: space-between; }
+  .program__product-item {
+    width: 245px;
+    margin: 0; }
+  .program__form-title {
+    margin-left: -110px;
+    width: 1440px; }
+    .program__form-title::after {
+      flex-grow: 1;
+      flex-basis: 70px;
+      min-width: 70px; }
+    .program__form-title::before {
+      flex-basis: 70px;
+      min-width: 70px; }
+  .program__button {
+    font-size: 20px;
+    line-height: 20px;
+    width: 568px;
+    height: 52px; }
+  .program__footnote {
+    font-size: 16px;
+    line-height: 16px;
+    margin-left: 80px; } }

@@ -50,7 +50,8 @@
   font-weight: 400;
   line-height: 12px;
   color: #444444;
-  padding: 0 20px;
+  width: 60px;
+  padding: 0 15px;
   background-color: #f2f2f2; }
 
 .example__expenses {
@@ -72,3 +73,80 @@
 .example__slider {
   text-align: center;
   margin: 0 auto; }
+
+.example__cat-image-tablet {
+  display: none; }
+
+@media (min-width: 768px) {
+  .example {
+    padding: 50px 30px 70px 30px;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff 52.5%, #f2f2f2 52.5%); }
+  .example__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 70px; }
+  .example__description {
+    font-size: 16px;
+    line-height: 24px;
+    margin-right: 20px; }
+  .example__achievment-desc {
+    background-color: #ffffff; }
+  .example__achievment-wrapper {
+    margin-right: 30px; }
+  .example__expenses {
+    font-size: 20px;
+    line-height: 25px;
+    text-align: right;
+    margin: 0; }
+  .example__expenses-price {
+    display: block; }
+  .example__cat {
+    box-sizing: border-box;
+    width: 768px;
+    margin-left: -30px;
+    background-color: #f2f2f2; }
+  .example__cat-image {
+    display: none; }
+  .example__cat-image-tablet {
+    display: block; }
+  .example__desktop-cat {
+    display: flex; } }
+
+@media (min-width: 1440px) {
+  .example {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-left: 110px;
+    padding-right: 110px;
+    background-color: #ffffff;
+    background-image: linear-gradient(to bottom, #ffffff 35%, #f2f2f2 35%); }
+  .example__title {
+    margin-bottom: 150px; }
+  .example__achievment {
+    flex-wrap: wrap;
+    width: 365px; }
+  .example__achievment-wrapper {
+    width: 162px;
+    height: 72px;
+    margin: 0;
+    margin-bottom: 60px; }
+  .example__achievment-number {
+    font-size: 30px; }
+  .example__achievment-desc {
+    top: 65px;
+    font-size: 14px;
+    padding: 0 10px;
+    width: auto;
+    background-color: #f2f2f2; }
+  .example__expenses {
+    text-align: left;
+    flex-grow: 1;
+    width: 100%; }
+  .example__expenses-price {
+    display: inline;
+    margin-left: 65px; }
+  .example__description {
+    width: 435px;
+    margin-bottom: 70px; } }

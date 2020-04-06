@@ -1,11 +1,15 @@
 .button {
   display: inline-block;
   background-color: #68b738;
-  color: #ffffff;
+
   border: none;
+
+  font-family: 'Oswald', sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 40px;
+  color: #ffffff;
+
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
@@ -14,7 +18,29 @@
   cursor: pointer;
 }
 
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .button--grey {
   background-color: #f2f2f2;
   color: #444444;
+}
+
+.button--grey:hover {
+  background-color: #ebebeb;
+}
+
+.button--grey:active {
+  color: rgba(68, 68, 68, 0.3);
+}
+
+@media (min-width: 768px) {
+  .button {
+    font-size: 16px;
+  }
 }

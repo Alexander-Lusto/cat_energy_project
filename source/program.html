@@ -2,147 +2,172 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title> Cat Energy </title>
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body>
-    <header class="header">
-      <div class="header__menu">
-        <img class="header__logo" src="img/index/logo-mobile.png" width="33" height="38"  alt="Logotype">
-        <img class="header__title" src="img/index/logo-mobile-header.png" width="101" height="18"  alt="Cat Energy">
-        <img class="header__open-menu-btn" src="img/mobile-menu.png" width="24" height="18" alt=" mobile menu">
-        <img class="header__close-menu-btn visually-hidden" src="img/index/m-close.png" width="18" height="18" alt="close menu">
-      </div>
-      <nav class="header__nav">
-        <a class="header__nav-item visually-hidden" href="#">Главная</a>
-        <a class="header__nav-item visually-hidden" href="#">Каталог продукции</a>
-        <a class="header__nav-item visually-hidden" href="#">Подбор программы</a>
-      </nav>
-    </header>
-    <section class="program">
-      <h1 class="program__title">Подбор программы</h1>
-      <p class="program__description"> Заполните анкету и мы подберём <br> программу питания для вашего кота</p>
-
-      <form class="program__form">
-        <label class="program__form-item">
-          Имя:*
-          <input class="program__input" type="text" placeholder="Барсик">
-        </label>
-        <label class="program__form-item">
-         Вес (кг):*
-         <input class="program__input" type="text" placeholder="7">
-        </label>
-        <label class="program__form-item">
-          Возраст (лет):
-          <input class="program__input" type="text" placeholder="7">
-        </label>
-        <div class="program__types">
-          <label class="program__type">
-            Похудение
-            <input class="visually-hidden" type="radio" name="type" value="Loosing weight" checked>
-            <span class="program__radio"></span>
-          </label>
-
-          <label class="program__type">
-            Набор массы
-            <input class="visually-hidden" type="radio" name="type" value="Weight gain">
-            <span class="program__radio"></span>
-          </label>
-
-          <label class="program__type">
-            Не знаю (нужен ваш совет)
-            <input class="visually-hidden" type="radio" name="type" value="Need your advice">
-            <span class="program__radio"></span>
-          </label>
-
+  <body class="page">
+    <div class="page__wrapper page__wrapper--white">
+      <header class="header">
+        <div class="header__menu ">
+          <picture>
+            <source media="(min-width: 1440px)" srcset="img/index/logo-desktop.png">
+            <source media="(min-width: 768px)" srcset="img/index/logo-tablet.png">
+            <img class="header__logo" src="img/index/logo-mobile.png" width="33" height="38"  alt="Логотип">
+          </picture>
+          <img class="header__title" src="img/index/logo-mobile-header.png" width="101" height="18"  alt="Cat Energy">
+          <img class="header__open-menu-btn visually-hidden" src="img/mobile-menu.png" width="24" height="18" alt="Открыть меню">
+          <img class="header__close-menu-btn" src="img/index/m-close.png" width="18" height="18" alt="Закрыть меню">
         </div>
-        <h2 class="program__form-title program__form-title--long">Контактные данные <br> (владельца кота)</h2>
+        <nav class="header__nav">
+          <a class="header__nav-item header__nav-item--black" href="index.html">Главная</a>
+          <a class="header__nav-item header__nav-item--black" href="catalog.html">Каталог продукции</a>
+          <a class="header__nav-item header__nav-item--black">Подбор программы</a>
+        </nav>
+      </header>
+      <section class="program">
+        <h1 class="program__title">Подбор программы</h1>
 
-        <label class="program__form-item">
-          E-mail:*
-          <input class="program__input program__input--email" type="email" placeholder="kuklachev@gmail.com">
-        </label>
+        <form class="program__form">
+          <p class="program__description"> Заполните анкету и мы подберём <br> программу питания для вашего кота</p>
+          <div class="program__flex-wrapper">
+            <div class="program__cat-info">
+              <label class="program__form-item">
+                Имя:*
+                <input class="program__input" type="text" placeholder="Барсик">
+              </label>
+              <label class="program__form-item">
+               Вес (кг):*
+               <input class="program__input" type="text" placeholder="7">
+              </label>
+              <label class="program__form-item">
+                Возраст (лет):
+                <input class="program__input" type="text" placeholder="7">
+              </label>
+            </div>
+            <div class="program__types">
+              <label class="program__type">
+                Похудение
+                <input class="visually-hidden" type="radio" name="type" value="Loosing weight" checked>
+                <span class="program__radio"></span>
+              </label>
 
-        <label class="program__form-item">
-          Телефон:*
-          <input class="program__input program__input--phone" type="phone" placeholder="8 (960) 900-60-90">
-        </label>
+              <label class="program__type">
+                Набор массы
+                <input class="visually-hidden" type="radio" name="type" value="Weight gain">
+                <span class="program__radio"></span>
+              </label>
 
-        <h2 class="program__form-title">Комментарий</h2>
-        <div class="program__comment">
-          <textarea class="program__message " placeholder="Расскажите обо всех повадках кота"></textarea>
+              <label class="program__type">
+                Не знаю (нужен ваш совет)
+                <input class="visually-hidden" type="radio" name="type" value="Need your advice">
+                <span class="program__radio"></span>
+              </label>
+            </div>
+          </div>
+          <h2 class="program__form-title program__form-title--long">Контактные данные <br> (владельца кота) </h2>
+          <div class="program__flex-wrapper">
+            <label class="program__form-item">
+              E-mail:*
+              <input class="program__input program__input--email" type="email" placeholder="kuklachev@gmail.com">
+            </label>
+
+            <label class="program__form-item">
+              Телефон:*
+              <input class="program__input program__input--phone" type="phone" placeholder="8 (960) 900-60-90">
+            </label>
+          </div>
+
+          <h2 class="program__form-title">Комментарий</h2>
+          <div class="program__comment">
+            <textarea class="program__message " placeholder="Расскажите обо всех повадках кота"></textarea>
+          </div>
+
+          <h2 class="program__form-title">Дополнительно</h2>
+          <div class="program__additional-info program__flex-wrapper">
+            <label class="program__product-item">
+              Сахарозаменитель
+              <input class="visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
+              <span class="program__checkbox"></span>
+            </label>
+
+            <label class="program__product-item">
+              Питьевая вода
+              <input class="visually-hidden" type="checkbox" name="additional" value="water">
+              <span class="program__checkbox"></span>
+            </label>
+
+            <label class="program__product-item">
+              Молоко
+              <input class="visually-hidden" type="checkbox" name="additional" value="milk">
+              <span class="program__checkbox"></span>
+            </label>
+
+            <label class="program__product-item">
+              Витамины
+              <input class="visually-hidden" type="checkbox" name="additional" value="vitamins">
+              <span class="program__checkbox"></span>
+            </label>
+          </div>
+          <button class="program__button button" type="submit">Отправить заявку</button>
+          <p class="program__footnote">* — Обязательные поля</p>
+        </form>
+      </section>
+
+      <section class="address address--grey">
+        <div class="address__wrap">
+          <h3 class="address__title">
+            Приглашаем <br>
+            к сотрудничеству<br>
+            дилеров!
+          </h3>
+          <p class="address__info">
+            ул. Большая <br>
+            Конюшенная, д. 19/8 <br>
+            <span class="address__city">Санкт-Петербург</span>
+          </p>
         </div>
-
-        <h2 class="program__form-title">Дополнительно</h2>
-        <div class="program__additional-info">
-          <label class="program__product-item">
-            Сахарозаменитель
-            <input class="visually-hidden" type="checkbox" name="additional" value="sweetener" checked>
-            <span class="program__checkbox"></span>
-          </label>
-
-          <label class="program__product-item">
-            Питьевая вода
-            <input class="visually-hidden" type="checkbox" name="additional" value="water">
-            <span class="program__checkbox"></span>
-          </label>
-
-          <label class="program__product-item">
-            Молоко
-            <input class="visually-hidden" type="checkbox" name="additional" value="milk">
-            <span class="program__checkbox"></span>
-          </label>
-
-          <label class="program__product-item">
-            Витамины
-            <input class="visually-hidden" type="checkbox" name="additional" value="vitamins">
-            <span class="program__checkbox"></span>
-          </label>
+        <div class="address__map-container">
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/index/map-desktop.png">
+            <source media="(min-width:768px)" srcset="img/index/map-tablet.png">
+            <img class="address__map" src="img/index/map.png" width="320" height="365" alt="Карта">
+          </picture>
+          <picture>
+            <source media="(min-width:1440px)" srcset="img/index/map-pin-desktop.png">
+            <source media="(min-width:768px)" srcset="img/index/map-pin-tablet.png">
+            <img class="address__map-pin" src="img/index/map-pin.png" width="55" height="53" alt="Метка">
+          </picture>
         </div>
-        <button class="program__button button" type="submit">Отправить заявку</button>
-        <p class="program__footnote">*- Обязательные поля</p>
-      </form>
-    </section>
-
-
-
-
-    <section class="address address--grey">
-      <div class="address__wrap">
-        <h3 class="address__title">
-          Приглашаем <br>
-          к сотрудничеству<br>
-          дилеров!
-        </h3>
-        <p class="address__info">
-          ул. Большая <br>
-          Конюшенная, д. 19/8 <br>
-          Санкт-Петербург
-        </p>
-      </div>
-      <div class="address__map-container">
-        <img class="address__map" src="img/index/map.jpg" width="320" height="365" alt="map">
-        <img class="address__map-pin" src="img/index/map-pin.png" width="55" height="53" alt="map pin">
-      </div>
-    </section>
-    <footer class="footer">
-      <img class="footer__logo" src="img/index/logo-mobile-header.png" width="128" height="24" alt="Cat Energy">
-      <ul class="footer__social-list">
-        <li class="footer__social-item">
-          <img src="img/index/m-vk.png" width="22" height="12" alt="Vkontakte">
-        </li>
-        <li class="footer__social-item">
-          <img src="img/index/m-insta.png" width="16" height="16" alt="Instagram">
-        </li>
-        <li class="footer__social-item">
-          <img src="img/index/m-fb.png" width="10" height="19" alt="Facebook">
-        </li>
-      </ul>
-      <div class="footer__creator">
-        <span class="footer__creator-author"> HTML Academy </span>
-        <img class="footer__creator-logo" src="img/index/htmlacademy.png" width="27" height="34" alt="HTML Academy Logo">
-      </div>
-    </footer>
+      </section>
+      <footer class="footer">
+        <img class="footer__logo" src="img/index/logo-mobile-header.png" width="128" height="24" alt="Cat Energy">
+        <ul class="footer__social-list">
+          <li class="footer__social-item">
+            <svg class="footer__social-vk" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="12" viewBox="0 0 22 12">
+              <image id="m-vk.svg" width="22" height="12" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABYAAAAMCAYAAABm+U3GAAABtElEQVQ4jW3TS4iPYRQG8N9cUiQrl4UkFIWURiFFuZRcYkFWNkN/lzRN2SELl5QkidgIybgUK0IW2GChXJJoFgpJQ6MmlwxKb56Pj+apf/2/c973Oed9znOaGo3GKsxGi9/owSF8wUGsxfDkfuAeVqI3sXJ/qr8YgrutOIeHeIuvWIYx2IrVGIb5+Iih6MJCXMQ0nMeVGvEIdBbiq/iGNUnMw00cwAS8wmDcSr43XRXswqXaXSnYV4h3pONZuI87uIHDWIp3GOlffMJiLMGUWmZ9YjOa8RQno2tzDnSk880YhP7a5aY89zT2oDvxMqej2IDnFdH2PLsj3y9TvXQ9KcUrlOEewSPsTWwULqe5syXQmsT7kJ6I5t0ZSk8G+aRGvBGLcAo/E9sUjm3VoZa2trbqf+lqOho4g+/p/PF/+hZ3PIj16vJ04nPs+EfTCu2Z+IVoOxDGxaLttVxxzArsxr6BiPvi0cm4jYkDEO/E+OhcaVxwHQuwpfwqjet4g5lxyrMM5RpeZBvnxA3lXFmM0TiWXSgLdhz7ByIu+IDlmIt1cc3YDLvoXp7+OkUKUfF/hX50/QIg52g9AJAoQgAAAABJRU5ErkJggg=="/>
+            </svg>
+          </li>
+          <li class="footer__social-item">
+            <svg  class="footer__social-inst" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16" height="16" viewBox="0 0 16 16">
+              <image id="m-insta.svg" width="16" height="16" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABM0lEQVQ4jZXTzSqFURQG4IcOhZGplPyMzI+BS1BcAMqAzlBi4BoQA0MyIhk65BYMXIPyk4xFTGmd1qnTZyOrdnt/q/d918+3Vlej0YBRbGMG/X63D1xhE3fdSb7BK6Yx+McJzFtyRmsZ+QLLf0QO68N7Yo+CW8u0p38gDOX9nPc+VjCZ7+ta1vxQIc5iFxP5fYsNnKMXj+gJbnchapDPsIOBPDvpC/xSltGyWkFgD2s47PC135HVZSe4msEwxnBcEA7feEdfigJt+/zB/82qAk+4x2IBuxCD0/FHWlbqwTpO832S92L+tvkquCTQTGA07CB9d+lrlgRitkfwUhGJE01tl1a14HxED2IxVguANrFEDgvOVWQQWxWLEbMddVanshQ5yHOoh0DUN4WtmO1/rHMd919+yD/pOTzp2AAAAABJRU5ErkJggg=="/>
+            </svg>
+          </li>
+          <li class="footer__social-item">
+            <svg class="footer__social-fb" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="19" viewBox="0 0 10 19">
+              <image id="m-fb.svg" width="10" height="19" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAATCAYAAACp65zuAAAA2klEQVQokdXSPUqDQRCH8V+CRJDgR6FoCuMN1F7EA6gQm5zAt/IIHsDO3MhCSyF+FLYKWtgJdiIYFmZgAxJs/Te7s/PszOzstJqmUWkT5zjCeu1oV/s+brGEE6xiBdvFOVeBF7jG0LSWa7CFYxxWyCUGySTYwwKewp7HGU7xnOABFgP4iXUtfB8ZvhhXeMMLunjHV9gjdLCRqfcyRajAW7Hfwbhuz0xlxBt8R+TXqPkhfJ2scTcOxtXFdnzAPj4TvJuR8jFf/uca/yNY+lfGqszklOp5LLr/NRwm7+kfHP7f0OcAAAAASUVORK5CYII="/>
+            </svg>
+          </li>
+        </ul>
+        <div class="footer__creator">
+          <span class="footer__creator-author"> HTML Academy </span>
+          <svg class="footer__creator-logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="27" height="34" viewBox="0 0 27 34">
+            <image id="htmlacademy.svg" width="27" height="34" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAYAAACuoaIwAAACi0lEQVRIia1W23EaQRBsqfg3GRgyQBEYRyApA90PvzoigIsAFMGdIwBHIBwBZOBzBD5HINe6eqi+0e49VJ4vbtl59fY8blarFUSmABb8XPD7M4AZz5Z4Lyee1AB+AWgAXHh24fc/mQB4pbFZxNAQiQXgJQRSTxKXfXR/TIFnJ9GzQD9FUIHemcjBV2ewT04D7lggAT2osyHKY6UV/O0HDDwB+AngYaziGGcLwlESmoOQ6785m9LBmaQoAMwB7Pkdstw6QnzIWU5jT3zTOQ2Hd1gDuOP5Ru6NdrZkJjuWwaOwVeXC80feKwntImbUO5s6hYLRH3sQODLrgnpn2mlBq862Ccia97aTpNgyuEpYm8ecbXogUymFlV6CXiY2djFnp4GQBfnByM/MJiZmz9pey9mStRN93IisaciY6HuslcXVnjqrHAu76uYL71gJgKQ6SNCvtFGYUphnb/abF3eMpqGhKuIstKp7QhnuvbDr53Knon74/81nBsE543eqbp5JDoUyd3Yyz+RUUd8z/b1Aq3XzjQH0wd2SrnZlcGaMVOvmKPAOJVTS2Yt0g5JQGRFCEL8dbINkkri0ITxrMi8XItj/o6Urs5m8U0aab/ieXd2l4ZsOhvEoM+uB0H1npl2b2J56sXJpOfOsamRmGb2fJUsVK5l1pHFf7aqzc2L42czKqHiQzBppupeIrvXPq7OCSrOe4VcJtH2Q+X0l2C9uZQZZt+/qjwbtTQdkO9lXQLvB/tZgrCNzLB+yVzjIdFjWsjLUSPTGuUDrN6uY+HbWyAbWWnxT1NfxDvcGBq3fV8D7d6mB2tUb6wjTDKrSQayMTRb8kCXV11DIKDgxyHR/7JQx67enui+FbgHwF5C5zp1VWCfTAAAAAElFTkSuQmCC"/>
+          </svg>
+        </div>
+      </footer>
+    </div>
+    <script src="js/script.js"></script>
   </body>
 </html>

@@ -1,0 +1,183 @@
+@media (min-width: 768px) {
+  .catalog__title {
+    flex-grow: 1;
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin-bottom: 170px; }
+  .catalog {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 30px; }
+  .product {
+    flex-direction: column;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    height: auto;
+    width: 324px;
+    padding: 0 30px 40px 30px;
+    margin-bottom: 140px;
+    text-align: center;
+    background-color: #f2f2f2; }
+  .product__name br {
+    display: none; }
+  .product__button {
+    flex-grow: 0; }
+  .product__photo {
+    margin-top: -90px;
+    margin-bottom: 40px; }
+  .product__name {
+    width: 130px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    font-size: 20px;
+    line-height: 20px; }
+  .product__info {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 16px; }
+  .product__info tr {
+    margin: 0 auto;
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 16px; }
+  .product__info tr {
+    height: 35px;
+    border-bottom: 1px solid #cdcdcd; }
+  .product__photo {
+    width: 195px;
+    height: 208px; }
+  .product__photo--small {
+    width: 161px;
+    height: 172px; }
+  .product--more {
+    height: 430px;
+    border: 1px solid #e6e6e6;
+    background-color: #ffffff; }
+  .product--more::before {
+    flex-grow: 1;
+    width: 60px;
+    height: 60px;
+    background-image: url(../img/catalog/plus-tablet.png); }
+  .product__name--more {
+    width: 150px; }
+  .product__info--more {
+    margin-bottom: 90px; }
+  .additional-catalog__title {
+    padding: 0;
+    margin-bottom: 70px;
+    width: 768px;
+    font-size: 36px;
+    line-height: 36px; }
+    .additional-catalog__title::after {
+      content: "";
+      flex-grow: 1;
+      margin-left: 40px;
+      margin-top: 10px;
+      height: 3px;
+      background-color: #68b738; }
+    .additional-catalog__title::before {
+      content: "";
+      flex-basis: 30px;
+      flex-grow: 0;
+      margin-right: 40px;
+      margin-top: 10px;
+      height: 3px;
+      background-color: #68b738; }
+  .goods {
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 28px 38px;
+    min-height: 140px;
+    border: 1px solid #f2f2f2; }
+  .goods:not(:nth-last-child(2)) {
+    border-bottom: none; }
+  .goods__info {
+    font-size: 16px;
+    line-height: 20px; }
+  .goods__name {
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .goods__value {
+    width: 130px; }
+  .additional-catalog__bonus {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 90px;
+    width: 708px;
+    min-height: 200px;
+    background-image: url(../img/catalog/gift-photo-tablet.jpg);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .additional-catalog__bonus-text {
+    margin: 0;
+    text-align: left; } }
+
+@media (min-width: 1440px) {
+  .catalog__title {
+    width: 100%; }
+  .catalog {
+    justify-content: flex-start;
+    padding: 0 110px; }
+  .product {
+    width: 245px; }
+  .product:not(:nth-of-type(4n)) {
+    margin-right: 80px; }
+  .additional-catalog {
+    padding: 90px 110px; }
+  .additional-catalog__title {
+    width: 1440px;
+    margin-left: -110px; }
+    .additional-catalog__title::before {
+      flex-basis: 70px; }
+  .additional-catalog__item {
+    display: flex;
+    margin: 0; }
+  .goods__button {
+    width: 245px; }
+  .goods {
+    align-items: center;
+    width: 895px;
+    min-height: 72px;
+    padding: 0;
+    border: none;
+    border-top: 1px solid #f2f2f2; }
+  .goods:nth-last-child(1) {
+    border-bottom: 1px solid #f2f2f2; }
+  .goods__name {
+    margin: 0;
+    flex-grow: 1; }
+  .goods__info {
+    width: 285px;
+    margin-right: 40px; }
+  .additional-catalog__bonus {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 40px 20px;
+    margin: 0;
+    width: 245px;
+    height: 290px;
+    background-image: url(../img/catalog/gift-photo-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat; }
+  .additional-catalog__bonus-text {
+    text-align: center;
+    width: 170px;
+    margin: 0;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400; }
+  .additional-catalog__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; } }
